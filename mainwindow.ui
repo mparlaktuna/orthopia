@@ -16,7 +16,14 @@
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
     <item row="0" column="0">
-     <widget class="QOpenGLWidget" name="openGLWidget"/>
+     <widget class="QFrame" name="vtk_frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>
@@ -29,7 +36,19 @@
      <height>21</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuFIle">
+    <property name="title">
+     <string>FIle</string>
+    </property>
+    <addaction name="actionImportSTL"/>
+   </widget>
+   <addaction name="menuFIle"/>
   </widget>
+  <action name="actionImportSTL">
+   <property name="text">
+    <string>stl aktar</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
